@@ -1,0 +1,138 @@
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: var(--dark-bg);
+    color: var(--dark-text);
+}
+
+body.dark-mode .navbar {
+    background-color: #2b3035 !important;
+}
+
+body.dark-mode .navbar-light .navbar-brand,
+body.dark-mode .navbar-light .navbar-nav .nav-link {
+    color: var(--dark-text);
+}
+
+body.dark-mode .navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+body.dark-mode #hero {
+    background: linear-gradient(rgba(33, 37, 41, 0.9), rgba(33, 37, 41, 0.7)), url('../assets/images/hero-bg.jpg');
+}
+
+body.dark-mode .card,
+body.dark-mode .form-control,
+body.dark-mode .btn-outline-secondary {
+    background-color: #343a40;
+    color: var(--dark-text);
+    border-color: #495057;
+}
+
+body.dark-mode .text-secondary {
+    color: #adb5bd !important;
+}
+
+body.dark-mode .form-check-input {
+    background-color: #495057;
+    border-color: #6c757d;
+}
+
+body.dark-mode a:not(.btn) {
+    color: #8ecae6;
+}
+
+/* Fix for dark mode text visibility issues */
+body.dark-mode .progress-bar {
+    color: #fff;
+}
+
+/* Fix for skills section text */
+body.dark-mode #skills .d-flex span {
+    color: var(--dark-text) !important;
+}
+
+/* Fix for experience section company location */
+body.dark-mode .h6.text-muted {
+    color: #adb5bd !important;
+}
+
+/* Fix for portfolio app development text */
+body.dark-mode .portfolio-item .card-text,
+body.dark-mode .portfolio-item .card-title,
+body.dark-mode .portfolio-item .text-muted {
+    color: var(--dark-text) !important;
+}
+
+/* Fix for testimonials text */
+body.dark-mode .testimonial-card {
+    background-color: #343a40 !important;
+    color: var(--dark-text);
+}
+
+body.dark-mode .testimonial-card h5,
+body.dark-mode .testimonial-card p {
+    color: var(--dark-text) !important;
+}
+
+body.dark-mode .testimonial-card .text-muted {
+    color: #adb5bd !important;
+}
+
+/* Fix for service cards text */
+body.dark-mode .service-card {
+    background-color: #343a40 !important;
+    color: var(--dark-text);
+}
+
+body.dark-mode .service-card h5,
+body.dark-mode .service-card p,
+body.dark-mode .service-card li {
+    color: var(--dark-text) !important;
+}
+
+/* Fix for skill cards in about.html */
+body.dark-mode #skills.bg-light {
+    background-color: #2b3035 !important;
+}
+
+body.dark-mode #skills h3,
+body.dark-mode #skills h4,
+body.dark-mode #skills p,
+body.dark-mode #skills span {
+    color: var(--dark-text) !important;
+}
+
+/* Fix for pricing plans in services.html */
+body.dark-mode .pricing-card {
+    background-color: #343a40 !important;
+    color: var(--dark-text);
+}
+
+body.dark-mode .pricing-header.bg-light {
+    background-color: #2b3035 !important;
+    color: var(--dark-text);
+}
+
+body.dark-mode .pricing-header h4,
+body.dark-mode .pricing-header h2,
+body.dark-mode .pricing-header p {
+    color: var(--dark-text) !important;
+}
+
+body.dark-mode .pricing-features ul li {
+    color: var(--dark-text) !important;
+}
+
+body.dark-mode .pricing-features ul li i.text-success,
+body.dark-mode .pricing-features ul li i.text-danger {
+    color: inherit !important;
+}
+
+body.dark-mode .pricing-features ul li i.text-success {
+    color: #28a745 !important;
+}
+
+body.dark-mode .pricing-features ul li i.text-danger {
+    color: #dc3545 !important;
+}

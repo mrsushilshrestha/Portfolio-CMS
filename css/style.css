@@ -1,0 +1,71 @@
+/* Main Styles */
+:root {
+    --primary-color: #4361ee;
+    --secondary-color: #3f37c9;
+    --accent-color: #4895ef;
+    --text-color: #333;
+    --light-bg: #f8f9fa;
+    --dark-bg: #212529;
+    --dark-text: #f8f9fa;
+    --transition: all 0.3s ease;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    padding-top: 76px; /* For fixed navbar */
+    transition: var(--transition);
+}
+
+/* Hero Section */
+#hero {
+    background: linear-gradient(rgba(248, 249, 250, 0.9), rgba(248, 249, 250, 0.7)), url('../assets/images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+}
+
+/* Custom padding override */
+.py-5 {
+    padding-top: 0.1rem !important;
+    padding-bottom: 3rem !important;
+}
+
+/* Bootstrap margin utility override */
+.mt-5 {
+    margin-top: 0.5rem !important; /* 8px equivalent with standard rem conversion */
+}
+
+/* Animations */
+.animate-typing {
+    overflow: hidden;
+    border-right: .15em solid var(--primary-color);
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: var(--primary-color) }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #hero {
+        text-align: center;
+    }
+    
+    #hero img {
+        margin-top: 2rem;
+        max-width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

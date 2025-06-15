@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials - Personal Portfolio</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Dark Mode CSS -->
+    <link rel="stylesheet" href="css/dark-mode.css">
+    <style>
+        .testimonial-card {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .testimonial-card:hover {
+            transform: translateY(-10px);
+        }
+        .testimonial-img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .swiper-pagination-bullet-active {
+            background-color: var(--bs-primary);
+        }
+        .rating {
+            color: #ffc107;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Sushil Shrestha</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="education.html">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="activity.html">Activity</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="chat.html">Chat</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="testimonials.html">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                </ul>
+                <!-- Dark Mode Toggle -->
+                <div class="ms-3 form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="darkModeToggle">
+                    <label class="form-check-label" for="darkModeToggle">
+                        <i class="fas fa-moon"></i>
+                    </label>
+                </div>
+                <!-- Language Selector -->
+                <div class="dropdown ms-3">
+                    <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-globe"></i> EN
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                        <li><a class="dropdown-item" href="#">English</a></li>
+                        <li><a class="dropdown-item" href="#">नेपाली</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-5 mt-5">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="display-4 fw-bold" data-aos="fade-up">Client <span class="text-primary">Testimonials</span></h2>
+                    <hr class="w-25 mx-auto">
+                    <p class="lead">What people say about my work</p>
+                </div>
+            </div>
+            
+            <!-- Testimonials Slider -->
+            <div class="row">
+                <div class="col-12" data-aos="fade-up">
+                    <div class="swiper testimonialSwiper">
+                        <div class="swiper-wrapper pb-5">
+                            <!-- Testimonial 1 -->
+                            <div class="swiper-slide">
+                                <div class="testimonial-card bg-white p-4">
+                                    <div class="d-flex justify-content-between align-items-center mb-4">
+                                        <div class="d-flex align-items-center">
+                                            <img src="assets/images/testimonial-1.jpg" alt="Client 1" class="testimonial-img me-3">
+                                            <div>
+                                                <h5 class="mb-0">Sarah Johnson</h5>
+                                                <p class="text-muted mb-0">CEO, TechStart</p>
+                                            </div>
+                                        </div>
+                                        <div class="rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <p class="mb-0">"Working with this developer was an absolute pleasure. They delivered our e-commerce website ahead of schedule and exceeded all our expectations. Their attention to detail and problem-solving skills are exceptional."</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Testimonial 2 -->
+                            <div class="swiper-slide">
+                                <div class="testimonial-card bg-white p-4">
+                                    <div class="d-flex justify-content-between align-items-center mb-4">
+                                        <div class="d-flex align-items-center">
+                                            <img src="assets/images/testimonial-2.jpg" alt="Client 2" class="testimonial-img me-3">
+                                            <div>
+                                                <h5 class="mb-0">Michael Chen</h5>
+                                                <p class="text-muted mb-0">Marketing Director, GrowthLabs</p>
+                                            </div>
+                                        </div>
+                                        <div class="rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <p class="mb-0">"I've worked with many developers over the years, but none have been as responsive and thorough as this one. They took the time to understand our business needs and delivered a website that perfectly represents our brand."</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Testimonial 3 -->
+                            <div class="swiper-slide">
+                                <div class="testimonial-card bg-white p-4">
+                                    <div class="d-flex justify-content-between align-items-center mb-4">
+                                        <div class="d-flex align-items-center">
+                                            <img src="assets/images/testimonial-3.jpg" alt="Client 3" class="testimonial-img me-3">
+                                            <div>
+                                                <h5 class="mb-0">Emily Rodriguez</h5>
+                                                <p class="text-muted mb-0">Founder, DesignHub</p>
+                                            </div>
+                                        </div>
+                                        <div class="rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                        </div>
+                                    </div>
+                                    <p class="mb-0">"The UI/UX expertise brought to our project was invaluable. Our website not only looks beautiful but is also incredibly user-friendly. The developer was communicative throughout the entire process and made revisions promptly."</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Testimonial 4 -->
+                            <div class="swiper-slide">
+                                <div class="testimonial-card bg-white p-4">
+                                    <div class="d-flex justify-content-between align-items-center mb-4">
+                                        <div class="d-flex align-items-center">
+                                            <img src="assets/images/testimonial-4.jpg" alt="Client 4" class="testimonial-img me-3">
+                                            <div>
+                                                <h5 class="mb-0">David Wilson</h5>
+                                                <p class="text-muted mb-0">CTO, InnovateTech</p>
+                                            </div>
+                                        </div>
+                                        <div class="rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <p class="mb-0">"As a technical leader, I appreciate developers who write clean, maintainable code. This developer not only met but exceeded our coding standards. The web application they built for us is robust, scalable, and performs exceptionally well."</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Testimonial 5 -->
+                            <div class="swiper-slide">
+                                <div class="testimonial-card bg-white p-4">
+                                    <div class="d-flex justify-content-between align-items-center mb-4">
+                                        <div class="d-flex align-items-center">
+                                            <img src="assets/images/testimonial-5.jpg" alt="Client 5" class="testimonial-img me-3">
+                                            <div>
+                                                <h5 class="mb-0">Sophia Kim</h5>
+                                                <p class="text-muted mb-0">Owner, Artisan Cafe</p>
+                                            </div>
+                                        </div>
+                                        <div class="rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <p class="mb-0">"As a small business owner, I needed a website that would help me compete with larger chains. The developer created a beautiful, functional site that has significantly increased our online orders. The investment has already paid for itself many times over."</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Client Logos -->
+            <div class="row mt-5 pt-5 border-top">
+                <div class="col-12 text-center mb-4">
+                    <h3 class="fw-bold" data-aos="fade-up">Trusted by</h3>
+                </div>
+                <div class="col-12" data-aos="fade-up">
+                    <div class="row row-cols-2 row-cols-md-5 g-4 justify-content-center align-items-center">
+                        <div class="col text-center">
+                            <img src="assets/images/client-1.png" alt="Client Logo 1" class="img-fluid opacity-75 client-logo" style="max-height: 60px;">
+                        </div>
+                        <div class="col text-center">
+                            <img src="assets/images/client-2.png" alt="Client Logo 2" class="img-fluid opacity-75 client-logo" style="max-height: 60px;">
+                        </div>
+                        <div class="col text-center">
+                            <img src="assets/images/client-3.png" alt="Client Logo 3" class="img-fluid opacity-75 client-logo" style="max-height: 60px;">
+                        </div>
+                        <div class="col text-center">
+                            <img src="assets/images/client-4.png" alt="Client Logo 4" class="img-fluid opacity-75 client-logo" style="max-height: 60px;">
+                        </div>
+                        <div class="col text-center">
+                            <img src="assets/images/client-5.png" alt="Client Logo 5" class="img-fluid opacity-75 client-logo" style="max-height: 60px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap 5 JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+    <!-- Dark Mode JS -->
+    <script src="js/dark-mode.js"></script>
+    
+    <script>
+        // Initialize AOS
+        AOS.init();
+        
+        // Initialize Swiper
+        const swiper = new Swiper('.testimonialSwiper', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 1,
+                },
+                768: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 3,
+                },
+            },
+            autoplay: {
+                delay: 3500,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
+</body>
+</html>

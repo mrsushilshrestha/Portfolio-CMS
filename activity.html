@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activities - Personal Portfolio</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Lightbox CSS for image gallery -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Dark Mode CSS -->
+    <link rel="stylesheet" href="css/dark-mode.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Sushil Shrestha</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="education.html">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="activity.html">Activity</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="chat.html">Chat</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="testimonials.html">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                </ul>
+                <!-- Dark Mode Toggle -->
+                <div class="ms-3 form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="darkModeToggle">
+                    <label class="form-check-label" for="darkModeToggle">
+                        <i class="fas fa-moon"></i>
+                    </label>
+                </div>
+                <!-- Language Selector -->
+                <div class="dropdown ms-3">
+                    <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-globe"></i> EN
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                        <li><a class="dropdown-item" href="#">English</a></li>
+                        <li><a class="dropdown-item" href="#">नेपाली</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Activity Section -->
+    <section id="activity" class="py-5 mt-5">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="display-4 fw-bold" data-aos="fade-up">My <span class="text-primary">Activities</span></h2>
+                    <hr class="w-25 mx-auto">
+                    <p class="lead">Certificates, Images, Videos, and More</p>
+                </div>
+            </div>
+            
+            <!-- Activity Tabs -->
+            <div class="row">
+                <div class="col-12">
+                    <ul class="nav nav-pills mb-5 justify-content-center" id="activityTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="certificates-tab" data-bs-toggle="pill" data-bs-target="#certificates" type="button" role="tab" aria-controls="certificates" aria-selected="true">Certificates</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="images-tab" data-bs-toggle="pill" data-bs-target="#images" type="button" role="tab" aria-controls="images" aria-selected="false">Images</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="videos-tab" data-bs-toggle="pill" data-bs-target="#videos" type="button" role="tab" aria-controls="videos" aria-selected="false">Videos</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="events-tab" data-bs-toggle="pill" data-bs-target="#events" type="button" role="tab" aria-controls="events" aria-selected="false">Events</button>
+                        </li>
+                    </ul>
+                    
+                    <div class="tab-content" id="activityTabContent">
+                        <!-- Certificates Tab -->
+                        <div class="tab-pane fade show active" id="certificates" role="tabpanel" aria-labelledby="certificates-tab">
+                            <div class="row g-4">
+                                <!-- Certificate 1 -->
+                                <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                                    <div class="card h-100 shadow-sm">
+                                        <img src="assets/images/certificate-1.jpg" class="card-img-top" alt="Certificate 1">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Web Development Certification</h5>
+                                            <p class="card-text">Completed comprehensive web development course covering front-end and back-end technologies.</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <small class="text-muted">Issued: Jan 2022</small>
+                                                <a href="assets/images/certificate-1.jpg" class="btn btn-sm btn-outline-primary" data-lightbox="certificates" data-title="Web Development Certification">View Full Size</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Certificate 2 -->
+                                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                                    <div class="card h-100 shadow-sm">
+                                        <img src="assets/images/certificate-2.jpg" class="card-img-top" alt="Certificate 2">
+                                        <div class="card-body">
+                                            <h5 class="card-title">UI/UX Design Mastery</h5>
+                                            <p class="card-text">Advanced user interface and experience design principles and practices.</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <small class="text-muted">Issued: Mar 2021</small>
+                                                <a href="assets/images/certificate-2.jpg" class="btn btn-sm btn-outline-primary" data-lightbox="certificates" data-title="UI/UX Design Mastery">View Full Size</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Certificate 3 -->
+                                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                                    <div class="card h-100 shadow-sm">
+                                        <img src="assets/images/certificate-3.jpg" class="card-img-top" alt="Certificate 3">
+                                        <div class="card-body">
+                                            <h5 class="card-title">JavaScript Frameworks</h5>
+                                            <p class="card-text">Mastery of modern JavaScript frameworks including React, Vue, and Angular.</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <small class="text-muted">Issued: Nov 2020</small>
+                                                <a href="assets/images/certificate-3.jpg" class="btn btn-sm btn-outline-primary" data-lightbox="certificates" data-title="JavaScript Frameworks">View Full Size</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Images Tab -->
+                        <div class="tab-pane fade" id="images" role="tabpanel" aria-labelledby="images-tab">
+                            <div class="row g-4">
+                                <!-- Image Gallery -->
+                                <div class="col-md-4 col-6" data-aos="fade-up">
+                                    <a href="assets/images/gallery-1.jpg" data-lightbox="image-gallery" data-title="Conference Presentation">
+                                        <img src="assets/images/gallery-1.jpg" class="img-fluid rounded shadow-sm" alt="Gallery Image 1">
+                                    </a>
+                                </div>
+                                <div class="col-md-4 col-6" data-aos="fade-up" data-aos-delay="100">
+                                    <a href="assets/images/gallery-2.jpg" data-lightbox="image-gallery" data-title="Team Building Event">
+                                        <img src="assets/images/gallery-2.jpg" class="img-fluid rounded shadow-sm" alt="Gallery Image 2">
+                                    </a>
+                                </div>
+                                <div class="col-md-4 col-6" data-aos="fade-up" data-aos-delay="200">
+                                    <a href="assets/images/gallery-3.jpg" data-lightbox="image-gallery" data-title="Hackathon Winner">
+                                        <img src="assets/images/gallery-3.jpg" class="img-fluid rounded shadow-sm" alt="Gallery Image 3">
+                                    </a>
+                                </div>
+                                <div class="col-md-4 col-6" data-aos="fade-up">
+                                    <a href="assets/images/gallery-4.jpg" data-lightbox="image-gallery" data-title="Workshop Facilitation">
+                                        <img src="assets/images/gallery-4.jpg" class="img-fluid rounded shadow-sm" alt="Gallery Image 4">
+                                    </a>
+                                </div>
+                                <div class="col-md-4 col-6" data-aos="fade-up" data-aos-delay="100">
+                                    <a href="assets/images/gallery-5.jpg" data-lightbox="image-gallery" data-title="Industry Conference">
+                                        <img src="assets/images/gallery-5.jpg" class="img-fluid rounded shadow-sm" alt="Gallery Image 5">
+                                    </a>
+                                </div>
+                                <div class="col-md-4 col-6" data-aos="fade-up" data-aos-delay="200">
+                                    <a href="assets/images/gallery-6.jpg" data-lightbox="image-gallery" data-title="Award Ceremony">
+                                        <img src="assets/images/gallery-6.jpg" class="img-fluid rounded shadow-sm" alt="Gallery Image 6">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Videos Tab -->
+                        <div class="tab-pane fade" id="videos" role="tabpanel" aria-labelledby="videos-tab">
+                            <div class="row g-4">
+                                <!-- Video 1 -->
+                                <div class="col-md-6" data-aos="fade-up">
+                                    <div class="card shadow-sm">
+                                        <div class="ratio ratio-16x9">
+                                            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video" allowfullscreen></iframe>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Conference Talk: Modern Web Development</h5>
+                                            <p class="card-text">A presentation on the latest trends and technologies in web development.</p>
+                                            <small class="text-muted">Published: June 2022</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Video 2 -->
+                                <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                                    <div class="card shadow-sm">
+                                        <div class="ratio ratio-16x9">
+                                            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video" allowfullscreen></iframe>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Tutorial: Building Responsive Websites</h5>
+                                            <p class="card-text">Step-by-step guide to creating mobile-friendly websites using Bootstrap 5.</p>
+                                            <small class="text-muted">Published: March 2022</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Events Tab -->
+                        <div class="tab-pane fade" id="events" role="tabpanel" aria-labelledby="events-tab">
+                            <div class="row g-4">
+                                <!-- Event 1 -->
+                                <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                                    <div class="card h-100 shadow-sm">
+                                        <img src="assets/images/event-1.jpg" class="card-img-top" alt="Event 1">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Tech Conference 2022</h5>
+                                            <p class="card-text">Participated as a speaker at the annual tech conference discussing web accessibility.</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <small class="text-muted">May 15-17, 2022</small>
+                                                <span class="badge bg-success">Speaker</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Event 2 -->
+                                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                                    <div class="card h-100 shadow-sm">
+                                        <img src="assets/images/event-2.jpg" class="card-img-top" alt="Event 2">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Hackathon 2021</h5>
+                                            <p class="card-text">Led a team of developers to create an innovative solution for healthcare communication.</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <small class="text-muted">November 5-7, 2021</small>
+                                                <span class="badge bg-primary">1st Place</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Event 3 -->
+                                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                                    <div class="card h-100 shadow-sm">
+                                        <img src="assets/images/event-3.jpg" class="card-img-top" alt="Event 3">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Web Development Workshop</h5>
+                                            <p class="card-text">Conducted a hands-on workshop teaching beginners how to build their first website.</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <small class="text-muted">August 12, 2021</small>
+                                                <span class="badge bg-info">Instructor</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap 5 JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Lightbox JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+    <!-- Dark Mode JS -->
+    <script src="js/dark-mode.js"></script>
+    
+    <script>
+        // Initialize AOS
+        AOS.init();
+        
+        // Lightbox configuration
+        lightbox.option({
+            'resizeDuration': 200,
+            'wrapAround': true,
+            'albumLabel': 'Image %1 of %2'
+        });
+    </script>
+</body>
+</html>

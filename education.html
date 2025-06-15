@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education - Personal Portfolio</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Dark Mode CSS -->
+    <link rel="stylesheet" href="css/dark-mode.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Sushil Shrestha</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="education.html">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="activity.html">Activity</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="chat.html">Chat</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="testimonials.html">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                </ul>
+                <!-- Dark Mode Toggle -->
+                <div class="ms-3 form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="darkModeToggle">
+                    <label class="form-check-label" for="darkModeToggle">
+                        <i class="fas fa-moon"></i>
+                    </label>
+                </div>
+                <!-- Language Selector -->
+                <div class="dropdown ms-3">
+                    <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-globe"></i> EN
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                        <li><a class="dropdown-item" href="#">English</a></li>
+                        <li><a class="dropdown-item" href="#">नेपाली</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Education Section -->
+    <section id="education" class="py-5 mt-5">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="display-4 fw-bold" data-aos="fade-up">My <span class="text-primary">Education</span></h2>
+                    <hr class="w-25 mx-auto">
+                    <p class="lead">My academic journey and qualifications</p>
+                </div>
+            </div>
+            
+            <!-- Timeline -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="timeline-container">
+                        <!-- Education Item 1 -->
+                        <div class="timeline-item" data-aos="fade-up">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">2018 - 2022</div>
+                            <div class="timeline-content shadow-sm">
+                                <h3>Bachelor of Computer Science</h3>
+                                <h4>University Name</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae eros quis nisl aliquam aliquet. Phasellus faucibus urna et odio facilisis, at pharetra odio aliquam.</p>
+                                <div class="badge bg-primary">GPA: 3.8/4.0</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Education Item 2 -->
+                        <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">2016 - 2018</div>
+                            <div class="timeline-content shadow-sm">
+                                <h3>Associate Degree in Web Development</h3>
+                                <h4>College Name</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae eros quis nisl aliquam aliquet. Phasellus faucibus urna et odio facilisis, at pharetra odio aliquam.</p>
+                                <div class="badge bg-primary">GPA: 3.9/4.0</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Education Item 3 -->
+                        <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">2012 - 2016</div>
+                            <div class="timeline-content shadow-sm">
+                                <h3>High School Diploma</h3>
+                                <h4>High School Name</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae eros quis nisl aliquam aliquet. Phasellus faucibus urna et odio facilisis, at pharetra odio aliquam.</p>
+                                <div class="badge bg-primary">GPA: 3.7/4.0</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Certifications -->
+            <div class="row mt-5 pt-5">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="h2 fw-bold" data-aos="fade-up">Professional <span class="text-primary">Certifications</span></h2>
+                    <hr class="w-25 mx-auto">
+                </div>
+                
+                <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-certificate text-primary fs-3 me-3"></i>
+                                <h5 class="card-title mb-0">Web Development Bootcamp</h5>
+                            </div>
+                            <h6 class="card-subtitle mb-2 text-muted">Udemy</h6>
+                            <p class="card-text">Comprehensive course covering HTML, CSS, JavaScript, Node.js, and React.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-light text-dark">2021</span>
+                                <a href="#" class="btn btn-sm btn-outline-primary">View Certificate</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-certificate text-primary fs-3 me-3"></i>
+                                <h5 class="card-title mb-0">UI/UX Design Fundamentals</h5>
+                            </div>
+                            <h6 class="card-subtitle mb-2 text-muted">Coursera</h6>
+                            <p class="card-text">Principles of user interface and experience design, wireframing, and prototyping.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-light text-dark">2020</span>
+                                <a href="#" class="btn btn-sm btn-outline-primary">View Certificate</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-certificate text-primary fs-3 me-3"></i>
+                                <h5 class="card-title mb-0">Advanced JavaScript</h5>
+                            </div>
+                            <h6 class="card-subtitle mb-2 text-muted">freeCodeCamp</h6>
+                            <p class="card-text">Deep dive into JavaScript concepts, ES6+, async programming, and frameworks.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-light text-dark">2019</span>
+                                <a href="#" class="btn btn-sm btn-outline-primary">View Certificate</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap 5 JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+    <!-- Dark Mode JS -->
+    <script src="js/dark-mode.js"></script>
+    
+    <script>
+        // Initialize AOS
+        AOS.init();
+    </script>
+</body>
+</html>
